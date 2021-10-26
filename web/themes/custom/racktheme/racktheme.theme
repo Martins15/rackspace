@@ -42,3 +42,4 @@ function racktheme_preprocess_breadcrumb(&$variables) {
     ];
   }
 }
+

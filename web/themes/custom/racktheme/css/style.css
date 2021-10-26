@@ -2,3 +2,152 @@
  * @file
  * Subtheme specific CSS.
  */
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 1px solid #efefef;
+  background-color: rgba(255,255,255,0.92);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu--main ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: -1px;
+}
+
+.menu--main ul li a {
+  align-items: center;
+  color: #333;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  padding: 18px 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-color .2s;
+}
+
+.menu--main ul li a:hover {
+  border-color: #eb0000;
+}
+
+.navbar-brand {
+  font-size: 0;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand img {
+  height: 32px;
+  width: 100%;
+}
+
+.node__content {
+  margin-top: 0;
+}
+
+.layout-bg-bg-container .field--type-image {
+  margin-right: 0;
+}
+
+.block-system-breadcrumb-block {
+  padding: 50px 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.block-system-breadcrumb-block a {
+  text-decoration: underline;
+}
+
+.block-system-breadcrumb-block .breadcrumb-item.active,
+.block-system-breadcrumb-block .breadcrumb-item::before {
+  color: #fff;
+}
+
+.field--name-field-h1 {
+  font-size: 38px;
+}
+
+.field--name-field-h2 {
+  font-size: 21px;
+}
+
+.layout--onecol {
+  padding: 50px 0;
+}
+
+.layout--onecol .block-inline-blockadvanced-block {
+  border: 1px solid #ccc;
+}
+
+.block-inline-blockadvanced-block {
+  padding: 30px;
+  text-align: center;
+}
+
+.field--name-field-simple-link a {
+  font-weight: bold;
+}
+
+.field--name-field-simple-link a:after {
+  display: inline;
+  content: "→";
+}
+
+.field--name-field-cta a {
+  padding: 8px 16px;
+  line-height: 1;
+  display: block;
+  color: #fff;
+  background: #eb0000;
+}
+
+.field--name-field-cta a:hover {
+  background: #9e0000;
+  color: #fff;
+}
+
+.layout--onecol .field--type-link .field__item {
+  margin: 0 10px 20px;
+}
+
+.node .layout--threecol-section .layout__region {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  flex: 1 0 30%;
+}
+
+.site-footer {
+  margin-top: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .layout--onecol .field--type-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .layout--threecol-section {
+    justify-content: space-between;
+  }
+
+  .layout--threecol-section .layout__region {
+    max-width: 30%;
+  }
+}
